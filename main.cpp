@@ -21,9 +21,9 @@ void closest(point*& A, int sizeA, point*& B, int sizeB, point p)
 	distance1 = pow((pow(p.getX() - center(A, sizeA).getX(), 2)) + (pow(p.getY() -  center(A, sizeA).getY(), 2)), 0.5);
 	distance2 = pow((pow(p.getX() - center(B, sizeB).getX(), 2)) + (pow(p.getY() - center(B, sizeB).getY(), 2)), 0.5);
 	if (distance1 > distance2)
-	cout << "Point belongs to cluster A" << endl;
+	cout << "Point belongs to cluster B" << endl;
 	if (distance1 < distance2)
-		cout << "Point belongs to cluster B" << endl;
+		cout << "Point belongs to cluster A" << endl;
 	if(distance1==distance2)
 		cout << "Identical distances from both clusters" << endl;
 }
